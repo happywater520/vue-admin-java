@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="gj.mapper.ClassMapper">
+
+    <select id="getPage" resultType="java.util.Map">
+        SELECT
+        c.class_id AS classId,
+        c.class_name AS className,
+        t.teacher_id AS teacherId,
+        t.teacher_name AS teacherName,
+        t.teacher_number AS teacherNumber
+        FROM class c JOIN teacher t ON c.teacher_id = t.teacher_id
+        <where>
+            <if test="name!=null and name!=''">
+                c.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            <if test="teacherName!=null and teacherName!=''">
+                t.teacher_name LIKE CONCAT('%', #{teacherName}, '%')
+            </if>
+        </where>
+    </select>
+
+    <select id="studentClass" resultType="java.util.Map">
+        SELECT c.class_id       AS classId,
+               c.class_name     AS className,
+               t.teacher_id     AS teacherId,
+               t.teacher_name   AS teacherName,
+               t.teacher_number AS teacherNumber
+        FROM student_class sc
+                 LEFT JOIN class c on sc.class_id = c.class_id
+                 JOIN teacher t ON c.teacher_id = t.teacher_id
+        WHERE sc.student_id = #{studentId}
+    </select>
+
+    <select id="getAddClassPage" resultType="java.util.Map">
+        SELECT c.class_id       AS classId,
+               c.class_name     AS className,
+               t.teacher_id     AS teacherId,
+               t.teacher_name   AS teacherName,
+               t.teacher_number AS teacherNumber
+        FROM class c
+                 JOIN teacher t ON c.teacher_id = t.teacher_id
+        WHERE c.class_id NOT IN (SELECT class_id FROM student_class WHERE student_id = #{studentId})
+    </select>
+
+    <select id="teacherClass" resultType="java.util.Map">
+        SELECT
+        c.class_id AS classId,
+        c.class_name AS className,
+        t.teacher_id AS teacherId,
+        t.teacher_name AS teacherName,
+        t.teacher_number AS teacherNumber,
+        c.value
+        FROM class c JOIN teacher t ON c.teacher_id = t.teacher_id
+        WHERE c.teacher_id = #{teacherId}
+        <if test="name!=null and name!=''">
+            AND c.class_name LIKE CONCAT('%', #{name}, '%')
+        </if>
+    </select>
+
+    <select id="classStudent" resultType="java.util.Map">
+        SELECT s.student_id AS studentId, s.student_name AS studentName, s.student_number AS studentNumber
+        FROM student s
+        WHERE s.student_id IN (SELECT student_id FROM student_class WHERE class_id = #{classId})
+    </select>
+
+    <select id="addClassStudent" resultType="java.util.Map">
+        SELECT s.student_id AS studentId, s.student_name AS studentName, s.student_number AS studentNumber
+        FROM student s
+        WHERE s.student_id NOT IN (SELECT student_id FROM student_class WHERE class_id = #{classId})
+    </select>
+
+    <select id="classScore" resultType="java.util.Map">
+        SELECT cs.student_id  AS studentId,
+               cs.id,
+               cs.score,
+               cs.reason,
+               cs.status,
+               s.student_name AS studentName
+        FROM class_score cs
+                 JOIN class c ON c.class_id = cs.class_id
+                 JOIN student s ON s.student_id = cs.student_id
+        WHERE cs.class_id = #{classId}
+    </select>
+
+    <select id="adminClass" resultType="java.util.Map">
+        SELECT c.class_id AS classId,
+        c.class_name AS className,
+        t.teacher_id AS teacherId,
+        t.teacher_name AS teacherName,
+        t.teacher_number AS teacherNumber
+        FROM class c
+        JOIN teacher t ON c.teacher_id = t.teacher_id
+        <where>
+            <if test="name!=null and name!=''">
+                AND c.class_name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            <if test="teacherName!=null and teacherName!=''">
+                AND t.teacher_name LIKE CONCAT('%', #{teacherName}, '%')
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe3edb06-b6d1-472d-8fdb-799da1fea04a" name="Default Changelist" comment="将文件结构重构，全面使用mybatis plus">
+      <change afterPath="$PROJECT_DIR$/class-management-f/src/views/student/StudentClass.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class-management-f/src/views/teacher/TeacherClass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/README-zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/README-zh.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/archives.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/city.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/clock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/come.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/epidemic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/leave.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/news.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/trip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/api/vaccines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/assets/404_images/404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/assets/404_images/404_cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/components/Breadcrumb/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/components/Hamburger/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/components/SvgIcon/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_come.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_news.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_sign.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_student.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_teacher.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_user.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/add_vaccines.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/clock_in.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_archives.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_come.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_news.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_student.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_teacher.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/edit_user.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/exam_file.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/lead_in.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/leavel_shchool.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/look_content.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/look_vaccines.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/news_details.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/news_details.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/not_sign.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/dialogs/trip_details.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/example.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/eye-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/form.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/nested.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/tree.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svg/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/icons/svgo.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/AppMain.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Navbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/FixiOSBug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/Item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/Link.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/Logo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/Sidebar/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/components/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/layout/mixin/ResizeHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/loading/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/permission.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/getters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/modules/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/modules/roles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/modules/settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/store/modules/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/element-ui.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/styles/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/filters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/get-page-title.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/utils/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/404.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/dashboard/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/dashboard/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/epstudy/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/epstudy/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/file/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/file/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/form/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/form/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/health/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/health/student.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/health/teacher.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/login/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/login/student.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/login/userLogin.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/monitor/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/monitor/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/notice/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/notice/message.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/notice/notice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/notice/notice.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/return/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/return/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/sign/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/sign/student.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/sign/teacher.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/trip/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/trip/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/user/student.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/user/student.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/user/teacher.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/vaccinate/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/src/views/vaccinate/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/tests/unit/components/Breadcrumb.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/tests/unit/components/Breadcrumb.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/tests/unit/utils/formatTime.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/tests/unit/utils/param2Obj.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/tests/unit/utils/parseTime.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/tests/unit/utils/validate.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/class-management-f/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/class-management-f/vue.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FileColors">
+    <fileColor scope="Local Unit Tests" color="Green" />
+    <fileColor scope="Android Instrumented Tests" color="Green" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="guijing &lt;guijing9527@outlook.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/class-management-f" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\BC\BC\Java\mavenSetting\repository" />
+        <option name="userSettingsFile" value="D:\BC\BC\Java\mavenSetting\aliyunSetting\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jivUtC2vmcO3CiHWTTxStVL2Dn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/desk/class-management/class-management/class-management-f",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "f79b586ab918d8e2188a4246c0705b94",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Data\GK\blog-boot\src\main\resources\mapper" />
+      <recent name="D:\Data\GK\blog-boot\src\main\java\gj\util" />
+      <recent name="D:\Data\GK\blog-boot\src\main\java\gj\entity" />
+      <recent name="D:\Data\GK\blog-boot\src\main\java\gj\service" />
+      <recent name="D:\Data\GK\blog-boot\src\main\java\gj\controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="gj" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="gj.blog.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="gj.mapper" />
+      <recent name="gj.service" />
+      <recent name="gj.entity" />
+      <recent name="gj.controller" />
+      <recent name="gj.util.page" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ClassManagement">
+    <configuration name="LogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gj.blog.log.LogTest" />
+      <module name="class-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gj.blog.log.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="class-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gj.blog" />
+      <option name="MAIN_CLASS_NAME" value="gj.blog.ThreadTest" />
+      <option name="METHOD_NAME" value="main([Ljava.lang.String;)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassManagement" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="class-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="gj.ClassManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.LogTest" />
+      <item itemvalue="JUnit.ThreadTest.main" />
+      <item itemvalue="Spring Boot.ClassManagement" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LogTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\guijing\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe3edb06-b6d1-472d-8fdb-799da1fea04a" name="Default Changelist" comment="" />
+      <created>1604299747485</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604299747485</updated>
+      <workItem from="1604299753310" duration="8902000" />
+      <workItem from="1604390716327" duration="3663000" />
+      <workItem from="1604469970648" duration="605000" />
+      <workItem from="1604637218358" duration="5828000" />
+      <workItem from="1604887013496" duration="2953000" />
+      <workItem from="1605080381543" duration="172000" />
+      <workItem from="1605150572970" duration="8663000" />
+      <workItem from="1605165866844" duration="5578000" />
+      <workItem from="1605238955699" duration="2219000" />
+      <workItem from="1605259896343" duration="1505000" />
+      <workItem from="1605364731940" duration="1020000" />
+      <workItem from="1605493077782" duration="4377000" />
+      <workItem from="1605505502386" duration="3365000" />
+      <workItem from="1605511736502" duration="4600000" />
+      <workItem from="1605576915670" duration="672000" />
+      <workItem from="1605582682072" duration="55000" />
+      <workItem from="1605593306078" duration="10718000" />
+      <workItem from="1605859932003" duration="4927000" />
+      <workItem from="1605866353069" duration="193000" />
+      <workItem from="1606185351482" duration="1752000" />
+      <workItem from="1606988421764" duration="996000" />
+      <workItem from="1607302907078" duration="14654000" />
+      <workItem from="1607771330817" duration="2068000" />
+      <workItem from="1607916643361" duration="5261000" />
+      <workItem from="1607928628249" duration="6510000" />
+      <workItem from="1607939893335" duration="161000" />
+      <workItem from="1608081768093" duration="3300000" />
+      <workItem from="1608185449302" duration="76000" />
+      <workItem from="1608301323233" duration="2666000" />
+      <workItem from="1608524441281" duration="1388000" />
+      <workItem from="1608535070769" duration="944000" />
+      <workItem from="1609593026024" duration="7270000" />
+      <workItem from="1610353582710" duration="99000" />
+      <workItem from="1610353723458" duration="713000" />
+      <workItem from="1610354508119" duration="695000" />
+      <workItem from="1610355287433" duration="7793000" />
+      <workItem from="1612441892494" duration="3811000" />
+      <workItem from="1612536138692" duration="1802000" />
+      <workItem from="1613886040541" duration="2677000" />
+      <workItem from="1613967727819" duration="31000" />
+      <workItem from="1613971455149" duration="2410000" />
+      <workItem from="1613988884379" duration="2720000" />
+      <workItem from="1614573454886" duration="617000" />
+      <workItem from="1614661523503" duration="2296000" />
+      <workItem from="1615000868287" duration="69000" />
+      <workItem from="1615042634133" duration="4506000" />
+      <workItem from="1616419342192" duration="40000" />
+      <workItem from="1618320421051" duration="377000" />
+      <workItem from="1619956401453" duration="3131000" />
+      <workItem from="1620127787141" duration="1086000" />
+      <workItem from="1620128919688" duration="3180000" />
+      <workItem from="1627998937979" duration="120000" />
+      <workItem from="1627999090215" duration="128000" />
+      <workItem from="1627999821013" duration="42000" />
+      <workItem from="1627999938592" duration="1144000" />
+      <workItem from="1628330722806" duration="485000" />
+      <workItem from="1633149118674" duration="115000" />
+      <workItem from="1633149283108" duration="341000" />
+      <workItem from="1633150335850" duration="2096000" />
+      <workItem from="1633162869062" duration="7141000" />
+      <workItem from="1633400861128" duration="91000" />
+      <workItem from="1634974704142" duration="1270000" />
+      <workItem from="1637318865987" duration="72000" />
+      <workItem from="1637420283315" duration="67000" />
+      <workItem from="1637504730852" duration="14877000" />
+      <workItem from="1638271453909" duration="3912000" />
+      <workItem from="1638541447411" duration="5000" />
+      <workItem from="1639293986985" duration="4219000" />
+      <workItem from="1639656485042" duration="5059000" />
+      <workItem from="1639904517802" duration="603000" />
+      <workItem from="1647953461235" duration="3109000" />
+      <workItem from="1651648656092" duration="27000" />
+      <workItem from="1654433963801" duration="31000" />
+      <workItem from="1654774623600" duration="4311000" />
+      <workItem from="1654932455691" duration="1044000" />
+      <workItem from="1661497879151" duration="7767000" />
+      <workItem from="1661563803627" duration="3322000" />
+      <workItem from="1661573385596" duration="11239000" />
+      <workItem from="1661662786810" duration="9010000" />
+      <workItem from="1666940115520" duration="13947000" />
+      <workItem from="1667166644779" duration="4047000" />
+      <workItem from="1668005452897" duration="24674000" />
+      <workItem from="1668038831541" duration="198000" />
+      <workItem from="1668039059813" duration="1933000" />
+      <workItem from="1670213741581" duration="148000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1605506200869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605506200869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first">
+      <created>1605511819088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605511819088</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first">
+      <created>1605511860112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605511860113</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first">
+      <created>1605512194388</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605512194388</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first">
+      <created>1605515894045</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605515894045</updated>
+    </task>
+    <task id="LOCAL-00006" summary="GUIJING">
+      <created>1605605959518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605605959518</updated>
+    </task>
+    <task id="LOCAL-00007" summary="GUIJING">
+      <created>1605606007681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605606007681</updated>
+    </task>
+    <task id="LOCAL-00008" summary="GUIJING">
+      <created>1605606086309</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605606086309</updated>
+    </task>
+    <task id="LOCAL-00009" summary="GUIJING">
+      <created>1605862057464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605862057464</updated>
+    </task>
+    <task id="LOCAL-00010" summary="GUIJING">
+      <created>1605863779919</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605863779919</updated>
+    </task>
+    <task id="LOCAL-00011" summary="GUIJING">
+      <created>1605864212358</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605864212358</updated>
+    </task>
+    <task id="LOCAL-00012" summary="GUIJING">
+      <created>1605866445150</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605866445150</updated>
+    </task>
+    <task id="LOCAL-00013" summary="blah">
+      <created>1607307975014</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607307975014</updated>
+    </task>
+    <task id="LOCAL-00014" summary="blah">
+      <created>1607308018649</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607308018649</updated>
+    </task>
+    <task id="LOCAL-00015" summary="GUIJING">
+      <created>1607320382401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607320382401</updated>
+    </task>
+    <task id="LOCAL-00016" summary="GUIJING">
+      <created>1607320432431</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607320432431</updated>
+    </task>
+    <task id="LOCAL-00017" summary="GUIJING">
+      <created>1607333591966</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607333591966</updated>
+    </task>
+    <task id="LOCAL-00018" summary="GUIJING">
+      <created>1607333622958</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607333622958</updated>
+    </task>
+    <task id="LOCAL-00019" summary="guijing">
+      <created>1607920823737</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607920823737</updated>
+    </task>
+    <task id="LOCAL-00020" summary="guijing">
+      <created>1607920837288</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607920837288</updated>
+    </task>
+    <task id="LOCAL-00021" summary="guijing">
+      <created>1607921080189</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607921080189</updated>
+    </task>
+    <task id="LOCAL-00022" summary="guijing">
+      <created>1607939927084</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607939927084</updated>
+    </task>
+    <task id="LOCAL-00023" summary="guijing">
+      <created>1607940003291</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607940003291</updated>
+    </task>
+    <task id="LOCAL-00024" summary="guijing">
+      <created>1608082705501</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608082705501</updated>
+    </task>
+    <task id="LOCAL-00025" summary="guijing">
+      <created>1608082748704</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608082748704</updated>
+    </task>
+    <task id="LOCAL-00026" summary="GUIJING">
+      <created>1608083032504</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608083032504</updated>
+    </task>
+    <task id="LOCAL-00027" summary="GUIJING">
+      <created>1608083054240</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608083054240</updated>
+    </task>
+    <task id="LOCAL-00028" summary="GUIJING">
+      <created>1608083079852</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1608083079852</updated>
+    </task>
+    <task id="LOCAL-00029" summary="GUIJING">
+      <created>1608098006849</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608098006849</updated>
+    </task>
+    <task id="LOCAL-00030" summary="GUIJING">
+      <created>1608098016408</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608098016408</updated>
+    </task>
+    <task id="LOCAL-00031" summary="GUIJING">
+      <created>1613987969849</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1613987969849</updated>
+    </task>
+    <task id="LOCAL-00032" summary="GUIJING">
+      <created>1613988007304</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988007304</updated>
+    </task>
+    <task id="LOCAL-00033" summary="GUIJING">
+      <created>1613988087559</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988087559</updated>
+    </task>
+    <task id="LOCAL-00034" summary="GUIJING">
+      <created>1613988110615</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988110615</updated>
+    </task>
+    <task id="LOCAL-00035" summary="GUIJING">
+      <created>1613988115211</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988115211</updated>
+    </task>
+    <task id="LOCAL-00036" summary="GUIJING">
+      <created>1613988121013</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988121013</updated>
+    </task>
+    <task id="LOCAL-00037" summary="GUIJING">
+      <created>1613988185084</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988185084</updated>
+    </task>
+    <task id="LOCAL-00038" summary="GUIJING">
+      <created>1613988466141</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988466141</updated>
+    </task>
+    <task id="LOCAL-00039" summary="GUIJING">
+      <created>1613988903339</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1613988903339</updated>
+    </task>
+    <task id="LOCAL-00040" summary="GUIJING">
+      <created>1613994079735</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1613994079735</updated>
+    </task>
+    <task id="LOCAL-00041" summary="GUIJING">
+      <created>1613994150871</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1613994150871</updated>
+    </task>
+    <task id="LOCAL-00042" summary="使用注解形式放行控制层方法">
+      <created>1615042748796</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1615042748796</updated>
+    </task>
+    <task id="LOCAL-00043" summary="application.yml">
+      <created>1618320536557</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1618320536557</updated>
+    </task>
+    <task id="LOCAL-00044" summary="工具类优化">
+      <created>1637504836006</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1637504836006</updated>
+    </task>
+    <task id="LOCAL-00045" summary="工具类优化">
+      <created>1637504872473</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1637504872473</updated>
+    </task>
+    <task id="LOCAL-00046" summary="工具类优化，未完">
+      <created>1637512085340</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1637512085340</updated>
+    </task>
+    <task id="LOCAL-00047" summary="webSocket">
+      <created>1639316094243</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1639316094243</updated>
+    </task>
+    <task id="LOCAL-00048" summary="🔨 将文件结构重置，聊天室项目启动">
+      <created>1661593139736</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1661593139736</updated>
+    </task>
+    <task id="LOCAL-00049" summary="将文件结构重构，全面使用mybatis plus">
+      <created>1667168236231</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1667168236231</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="first" />
+    <MESSAGE value="blah" />
+    <MESSAGE value="guijing" />
+    <MESSAGE value="GUIJING" />
+    <MESSAGE value="使用注解形式放行控制层方法" />
+    <MESSAGE value="application.yml" />
+    <MESSAGE value="工具类优化" />
+    <MESSAGE value="工具类优化，未完" />
+    <MESSAGE value="webSocket" />
+    <MESSAGE value=" 将文件结构重置，聊天室项目启动" />
+    <MESSAGE value="将文件结构重构，全面使用mybatis plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="将文件结构重构，全面使用mybatis plus" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
