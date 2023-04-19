@@ -2,7 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="gj.mapper.ClassScoreMapper">
+<!--显示学生名、分数、课程名-->
 
+<!--分数表、学生表
+
+根据学生id，
+显示 学生名、分数-->
     <select id="selectScore" resultType="java.util.Map">
         SELECT SUM(cs.score)  AS score,
                s.student_id   AS studentId,
@@ -13,6 +18,11 @@
         GROUP BY cs.student_id
     </select>
 
+<!-- 参数学生id
+分数表、课程表
+
+显示 分数、课程名
+c-->
     <select id="scoreDetail" resultType="java.util.Map">
         SELECT SUM(cs.score) AS score,
                c.class_name  AS className

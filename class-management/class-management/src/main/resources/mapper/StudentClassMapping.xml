@@ -3,6 +3,8 @@
 
 <mapper namespace="gj.mapper.StudentClassMapper">
 
+<!--学生选课表
+    显示学生id、课程id-->
     <select id="getPage" resultType="java.util.Map">
         SELECT * FROM student_class
     </select>

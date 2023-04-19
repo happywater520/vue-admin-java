@@ -12,35 +12,42 @@ import javax.validation.constraints.NotNull;
 @TableName("admin")
 public class AdminEntity {
 
+    @NotNull
+    @TableId(value = "admin_id", type = IdType.AUTO)
+    @Remark("主键")
+    private Integer id;
 
+    @NotBlank(message = "用户名不能为空")
+    @TableField("admin_username")
+    @Remark("用户名")
+    private String username;
 
-    private Integer admin_id;
+    @NotNull
+    @Remark("密码")
+    @TableField("admin_password")
+    private String password;
 
-    private String admin_username;
-
-    private String admin_password;
-
-    public Integer getAdmin_id() {
-        return admin_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setAdmin_id(Integer admin_id) {
-        this.admin_id = admin_id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getAdmin_username() {
-        return admin_username;
+    public String getUsername() {
+        return username;
     }
 
-    public void setAdmin_username(String admin_username) {
-        this.admin_username = admin_username;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getAdmin_password() {
-        return admin_password;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAdmin_password(String admin_password) {
-        this.admin_password = admin_password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

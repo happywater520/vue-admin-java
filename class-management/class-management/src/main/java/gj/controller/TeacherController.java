@@ -29,7 +29,7 @@ public class TeacherController {
     @RequestMapping("save")
     public ServiceResponseBody save(@RequestBody TeacherEntity teacherEntity) {
         teacherService.saveOrUpdate(teacherEntity);
-        return ServiceResponseBody.successMessage("新增成功");
+        return ServiceResponseBody.successMessage("操作成功");
     }
 
     @RequestMapping("delete")

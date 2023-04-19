@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
-
+//分数信息学生的申请、老师的审核
 @RestController
 @RequestMapping("/classScore")
 public class ClassScoreController {
@@ -42,16 +42,17 @@ public class ClassScoreController {
         return ServiceResponseBody.success(classScoreService.scoreDetail(studentId));
     }
 
+    //status 未审核是0，未通过是1，已通过是2
     @RequestMapping("pass")
     public ServiceResponseBody pass(Integer id) {
         classScoreService.update(new LambdaUpdateWrapper<ClassScoreEntity>().eq(ClassScoreEntity::getId, id).set(ClassScoreEntity::getStatus, 2));
-        return ServiceResponseBody.successMessage("审核成功");
+        return ServiceResponseBody.successMessage("已审核：通过");
     }
 
     @RequestMapping("noPass")
     public ServiceResponseBody noPass(Integer id) {
         classScoreService.update(new LambdaUpdateWrapper<ClassScoreEntity>().eq(ClassScoreEntity::getId, id).set(ClassScoreEntity::getStatus, 1));
-        return ServiceResponseBody.successMessage("审核成功");
+        return ServiceResponseBody.successMessage("已审核：不通过");
     }
 
 }

@@ -19,7 +19,7 @@ public class TeacherEntity {
     @TableId(value = "teacher_id", type = IdType.AUTO)
     private Integer id;
 
-    @Length(min = 12, max = 12, message = "工号长度必须为12位")
+//    @Length(min = 12, max = 12, message = "工号长度必须为12位")
     @TableField("teacher_number")
     @Remark("工号")
     private String number;

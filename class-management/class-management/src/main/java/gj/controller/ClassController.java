@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
-
-@RestController
+//班级信息老师的创建、修改、学生的加入
+@RestController //设置当前控制器类为RESTful风格
 @RequestMapping("/class")
 public class ClassController {
 
@@ -26,7 +26,7 @@ public class ClassController {
     @Resource
     private StudentClassService studentClassService;
 
-    @RequestMapping("create")
+    @RequestMapping("create") //映射路径和方法的对应关系
     public ServiceResponseBody create(@RequestBody ClassEntity entity) {
         classService.save(entity);
         return ServiceResponseBody.successMessage("创建成功");

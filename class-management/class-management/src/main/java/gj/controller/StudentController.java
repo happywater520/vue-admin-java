@@ -14,7 +14,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
-
     @Resource
     private StudentService studentService;
 
@@ -38,6 +37,4 @@ public class StudentController {
         studentService.removeById(id);
         return ServiceResponseBody.successMessage("删除成功");
     }
-
-
 }

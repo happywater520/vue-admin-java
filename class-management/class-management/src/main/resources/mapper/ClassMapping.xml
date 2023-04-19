@@ -3,6 +3,11 @@
 
 <mapper namespace="gj.mapper.ClassMapper">
 
+<!--参数课程名，教师名。
+课程表、教师表
+
+根据教师id课程id查找
+显示教师号、课程名、教师名。-->
     <select id="getPage" resultType="java.util.Map">
         SELECT
         c.class_id AS classId,
@@ -21,6 +26,11 @@
         </where>
     </select>
 
+<!--参数学生id。
+课程表、学生表、学生选课表
+
+根据课程id、教师id查找
+显示 课程名、教师号、教师名-->
     <select id="studentClass" resultType="java.util.Map">
         SELECT c.class_id       AS classId,
                c.class_name     AS className,
@@ -33,6 +43,11 @@
         WHERE sc.student_id = #{studentId}
     </select>
 
+<!--参数学生id。
+课程表
+
+根据课程id、教师id查找
+显示 课程名、教师号、教师名-->
     <select id="getAddClassPage" resultType="java.util.Map">
         SELECT c.class_id       AS classId,
                c.class_name     AS className,
@@ -44,6 +59,10 @@
         WHERE c.class_id NOT IN (SELECT class_id FROM student_class WHERE student_id = #{studentId})
     </select>
 
+<!--课程表、教师表
+
+根据教师id课程id查找。
+显示教师号、课程名、教师名、-->
     <select id="teacherClass" resultType="java.util.Map">
         SELECT
         c.class_id AS classId,
@@ -59,18 +78,36 @@
         </if>
     </select>
 
+<!--参数学生id。
+学生表
+
+根据学生id，
+显示学号、学生名-->
     <select id="classStudent" resultType="java.util.Map">
-        SELECT s.student_id AS studentId, s.student_name AS studentName, s.student_number AS studentNumber
+        SELECT s.student_id AS studentId,
+               s.student_name AS studentName,
+               s.student_number AS studentNumber
         FROM student s
         WHERE s.student_id IN (SELECT student_id FROM student_class WHERE class_id = #{classId})
     </select>
 
+<!--参数课程id。
+学生表
+
+根据学生id，
+显示学号、学生名-->
     <select id="addClassStudent" resultType="java.util.Map">
-        SELECT s.student_id AS studentId, s.student_name AS studentName, s.student_number AS studentNumber
+        SELECT s.student_id AS studentId,
+               s.student_name AS studentName,
+               s.student_number AS studentNumber
         FROM student s
         WHERE s.student_id NOT IN (SELECT student_id FROM student_class WHERE class_id = #{classId})
     </select>
+<!--参数：课程id。
+分数表
 
+根据教师id、课程id
+显示课程名、教师名、教师号-->
     <select id="classScore" resultType="java.util.Map">
         SELECT cs.student_id  AS studentId,
                cs.id,
@@ -84,6 +121,11 @@
         WHERE cs.class_id = #{classId}
     </select>
 
+<!--参数：课程名，教师名。
+课程表
+
+根据教师id、课程id
+显示课程名、教师名、教师号-->
     <select id="adminClass" resultType="java.util.Map">
         SELECT c.class_id AS classId,
         c.class_name AS className,
